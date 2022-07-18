@@ -396,6 +396,11 @@ body{
     margin-left: 32px;
     margin-bottom: 8px;
   }
+  .services__heading::before{
+    width: 4px;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+  }
 
   .services__user-section{
     display: flex;
