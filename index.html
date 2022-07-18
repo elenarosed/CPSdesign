@@ -4,98 +4,101 @@
     <meta charset="utf-8">
     <title>Услуги и сервисы</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header class="header">
-      <div class="header__column left-column">
-        <button type="button" name="menu" class="button header__menu-button"></button>
-        <img src="img/Group.png" alt="Логотип компании CPS" class="header__logo">
-      </div>
-      <div class="header__column right-column">
-        <nav class="header__navigation header-nav">
-          <div class="help-section">
-            <button type="button" name="call" class="button button-call header-nav__button">
-              Call
-            </button>
-            <button type="button" name="chat" class="button button-chat header-nav__button">
-              Chat
-            </button>
-            <button type="button" name="profile" class="button button-profile header-nav__button">
-              Profile
-            </button>
-          </div>
-          <div class="order-section">
-            <button type="button" name="repair" class="button button-repair header-nav__button">
-              Repair
-            </button>
-            <button type="button" name="status" class="button button-status header-nav__button">
-              Checkstatus
-            </button>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="services">
-        <header class="services-header">
-          <h2 class="services__heading heading">Услуги и сервисы</h2>
-          <ul class="services__user-section">
-            <li class="services__user-section-item">
-              <button type="button" name="repair" class="button-repair-text services-header__button">
-                Оставить заявку
-              </button>
-            </li>
-            <li class="services__user-section-item">
-              <button type="button" name="status" class="button-status-text services-header__button">
-                Статус ремонта
-              </button>
-            </li>
-          </ul>
-        </header>
-        <nav class="services__navigation services-navigation">
-          <ul class="services-list services-navigation__list">
-            <li class="services-list__item services-list__item_active">
-              <a class="services-navigation__link">Ремонтируемые устройства</a>
-            </li>
-            <li class="services-list__item">
-              <a href="#" class="services-navigation__link">Дополнительные услуги</a>
-            </li>
-            <li class="services-list__item">
-              <a href="#" class="services-navigation__link">Цены на услуги</a>
-            </li>
-            <li class="services-list__item">
-              <a href="#" class="services-navigation__link">Адреса сервисных центров</a>
-            </li>
-            <li class="services-list__item">
-              <a href="#" class="services-navigation__link">Специальные цены</a>
-            </li>
-            <li class="break"></li>
-            <li class="services-list__item">
-              <a href="#" class="services-navigation__link">Отзывы</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="services-description services__description">
-            <div class="services-description__text text-section" >
-              <div class="services-description__info">
-                <p class="text">
-                  Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                  Только у нас вы можете отремонтировать свой ноутбук Dell
-                  с официальной гарантией производителя.
-                </p>
-                <p class="text">
-                  Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера ,
-                  что подтверждает большое количество постоянных клиентов.
-                  Мы гордимся тем, что к нам обращаются по рекомендациям
-                  и, в свою очередь, советуют нас родным и близким.
-                </p>
-              </div>
-              <a href="#" class="services-description__link">Читать далее</a>
-            </div>
-          <img src="img/cps.jpg" alt="" class="services-description__image">
+    <div class="page-layout">
+      <header class="header">
+        <div class="header__column left-column">
+          <button type="button" name="menu" class="button header__menu-button"></button>
+          <img src="img/Group.png" alt="Логотип компании CPS" class="header__logo">
         </div>
-      </div>
-    </main>
+        <div class="header__column right-column">
+          <nav class="header__navigation header-nav">
+            <div class="help-section">
+              <button type="button" name="call" class="button button-call header-nav__button">
+                Call
+              </button>
+              <button type="button" name="chat" class="button button-chat header-nav__button">
+                Chat
+              </button>
+              <button type="button" name="profile" class="button button-profile header-nav__button">
+                Profile
+              </button>
+            </div>
+            <div class="personal-section">
+              <button type="button" name="repair" class="button button-repair header-nav__button">
+                Repair
+              </button>
+              <button type="button" name="status" class="button button-status header-nav__button">
+                Checkstatus
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="services">
+          <header class="services-header">
+            <h2 class="services__heading heading">Услуги и сервисы</h2>
+            <ul class="services__user-section">
+              <li class="services__user-section-item">
+                <button type="button" name="repair" class="button-repair-text services-header__button">
+                  Оставить заявку
+                </button>
+              </li>
+              <li class="services__user-section-item">
+                <button type="button" name="status" class="button-status-text services-header__button">
+                  Статус ремонта
+                </button>
+              </li>
+            </ul>
+          </header>
+          <nav class="services__navigation services-navigation">
+            <ul class="services-list services-navigation__list">
+              <li class="services-list__item services-list__item_active">
+                <a class="services-navigation__link">Ремонтируемые устройства</a>
+              </li>
+              <li class="services-list__item">
+                <a href="#" class="services-navigation__link">Дополнительные услуги</a>
+              </li>
+              <li class="services-list__item">
+                <a href="#" class="services-navigation__link">Цены на услуги</a>
+              </li>
+              <li class="services-list__item">
+                <a href="#" class="services-navigation__link">Адреса сервисных центров</a>
+              </li>
+              <li class="services-list__item">
+                <a href="#" class="services-navigation__link">Специальные цены</a>
+              </li>
+              <li class="break"></li>
+              <li class="services-list__item">
+                <a href="#" class="services-navigation__link">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="services-description services__description">
+              <div class="services-description__text text-section" >
+                <div class="services-description__info">
+                  <p class="text">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                    Только у нас вы можете отремонтировать свой ноутбук Dell
+                    с официальной гарантией производителя.
+                  </p>
+                  <p class="text">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера ,
+                    что подтверждает большое количество постоянных клиентов.
+                    Мы гордимся тем, что к нам обращаются по рекомендациям
+                    и, в свою очередь, советуют нас родным и близким.
+                  </p>
+                </div>
+                <a href="#" class="services-description__link">Читать далее</a>
+              </div>
+            <img src="img/cps.jpg" alt="" class="services-description__image">
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

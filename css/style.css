@@ -44,13 +44,15 @@ body{
   justify-content: space-between;
 }
 
-.header__logo{
-  vertical-align: middle;
+.left-column{
+  display: flex;
+  align-items: center;
 }
 
 .button{
   width: 40px;
   height: 40px;
+  padding:0;
   font-size: 0;
   border: none;
   border-radius: 20px;
@@ -59,7 +61,9 @@ body{
 }
 
 .header__menu-button{
-  margin: 24px 26px;
+  margin-left: 26px;
+  margin-right: 21px;
+  padding: 0;
   background-image: url("../img/menu.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -84,7 +88,21 @@ body{
 }
 
 .button-repair{
+  position: relative;
   background-image: url("../img/repair.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-repair::before{
+  content: "";
+  position: absolute;
+  right: 150%;
+  top: 5px;
+  display: block;
+  width: 2px;
+  height: 32px;
+  background-image: url("../img/divider.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -97,6 +115,7 @@ body{
 
 .header-nav{
   display: flex;
+  height: 88px;
 }
 
 .header-nav__button{
@@ -104,7 +123,7 @@ body{
 }
 
 .header-nav__button:last-of-type{
-  margin-right: 24px;
+  margin-right: 16px;
 }
 
 .help-section{
@@ -112,6 +131,9 @@ body{
   width: 1px;
 }
 
+.personal-section{
+  height: 88px;
+}
 
 /* SERVICES SECTION */
 
@@ -263,9 +285,38 @@ body{
     line-height: 20px;
   }
 
+  .header__logo{
+    margin-left: 20px;
+  }
+
+  .header__menu-button{
+    position: relative;
+  }
+
+  .header__menu-button::before{
+    content: "";
+    position: absolute;
+    left: 61px;
+    top: 5px;
+    display: block;
+    width: 2px;
+    height: 32px;
+    background-image: url("../img/divider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .help-section{
     visibility: visible;
     width: auto;
+  }
+
+  .header-nav__button:last-of-type{
+    margin-right: 24px;
+  }
+
+  .personal-section{
+    margin-left: 18px;
   }
 
   .services-list{
@@ -279,7 +330,7 @@ body{
 
   .services__description{
     flex-direction: row;
-    margin: 0;
+    margin-bottom: 0;
     margin-top: 32px;
   }
 
@@ -318,10 +369,11 @@ body{
 /* 1120 PX */
 
 @media (min-width: 1120px){
-  body{
+  .page-layout{
     margin: 0 auto;
     width: 1120px;
   }
+
   .header{
     display: none;
   }
