@@ -159,11 +159,10 @@ body{
   position: absolute;
   display: inline-block;
   top: 0;
-  left: -29px;
-  width: 8px;
+  left: -25px;
   height: 40px;
-  background-color: #41F6D7;
-  border-radius: 25px;
+  border-left: 4px solid #41F6D7;
+  border-radius: 0 5px 5px 0;
 }
 
 .services__user-section{
@@ -396,12 +395,7 @@ body{
     margin-left: 32px;
     margin-bottom: 8px;
   }
-  .services__heading::before{
-    width: 4px;
-    border-top-left-radius: 20%;
-    border-bottom-left-radius: 20%;
-  }
-
+  
   .services__user-section{
     display: flex;
     margin: 0;
