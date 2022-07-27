@@ -60,6 +60,12 @@ body{
 
 }
 
+.button:hover{
+  filter: saturate(3) brightness(1.2);
+  transform: scale(1.1);
+  transition: 0.3s ease-out;
+}
+
 .header__menu-button{
   margin-left: 26px;
   margin-right: 21px;
@@ -126,7 +132,7 @@ body{
   margin-right: 16px;
 }
 
-.help-section{
+.help-section_visibility{
   visibility: hidden;
   width: 1px;
 }
@@ -215,7 +221,7 @@ body{
 .services-list{
   display: flex;
   justify-content: space-between;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   overflow: scroll;
   width: auto;
 
@@ -225,19 +231,20 @@ body{
 }
 
 .services-navigation__list{
-  margin: 0;
-  margin-left: 24px;
-  margin-right: 37px;
+  margin: 0 37px 0 24px;
   padding: 0;
-
 }
 
 .services-list__item{
   height: 40px;
   text-align: center;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  margin-right: 34px;
+  padding: 8px 16px;
+}
+
+.services-list__item:not(.services-list__item_active):hover{
+  background-color: rgb(234, 234, 234);
+  border-radius:  6px;
+  text-decoration: underline;
 }
 
 .services-list__item_active{
@@ -271,6 +278,11 @@ body{
   color: #1B1C21;
   text-decoration: none;
   margin-left: 10px;
+}
+
+.services-description__link:hover{
+  transform: scale(1.5);
+  transition: 0.3s ease-out;
 }
 
 .services-description__link::before{
@@ -318,7 +330,7 @@ body{
     background-position: center;
   }
 
-  .help-section{
+  .help-section_visibility{
     visibility: visible;
     width: auto;
   }

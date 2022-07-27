@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Услуги и сервисы</title>
-    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
   </head>
   <body>
     <div class="page-layout">
       <header class="header">
         <div class="header__column left-column">
-          <button type="button" name="menu" class="button header__menu-button"></button>
+          <a href="#menu" class="button header__menu-button"></a>
           <img src="img/Group.png" alt="Логотип компании CPS" class="header__logo">
         </div>
         <div class="header__column right-column">
           <nav class="header__navigation header-nav">
-            <div class="help-section">
+            <div class="help-section help-section_visibility">
               <button type="button" name="call" class="button button-call header-nav__button">
                 Звонок
               </button>
@@ -99,6 +100,58 @@
           </div>
         </div>
       </main>
+
+
+      <div id="menu" class="menu-wrapper">
+        <a href="##" class="menu-area"></a>
+        <div class="menu">
+          <header class="menu-header menu__header">
+            <a href="##" class="button menu__close">Закрыть</a>
+            <img src="img/Group.png" alt="Логотип компании CPS" class="menu__logo">
+            <button type="button" name="search" class="button menu__search">
+              Поиск
+            </button>
+          </header>
+
+          <div class="menu__body">
+            <nav class="menu__navigation">
+              <ul class="menu__links-list list">
+                <li class="menu__link"><a href="#" class=" menu__link_active link link_active">Ремонт техники</a></li>
+                <li><a href="#" class="menu__link link">Услуги и сервисы</a></li>
+                <li><a href="#" class="menu__link link">Корпоративным клиентам</a></li>
+                <li><a href="#" class="menu__link link">Продавцам техники</a></li>
+                <li><a href="#" class="menu__link link">Партнерам</a></li>
+                <li><a href="#" class="menu__link link">Производителям</a></li>
+                <li><a href="#" class="menu__link link">Наши сервисные центры</a></li>
+                <li><a href="#" class="menu__link link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <footer class="menu__footer">
+            <div class="help-section menu__help-section">
+              <button type="button" name="call" class="button button-call header-nav__button">
+                Звонок
+              </button>
+              <button type="button" name="chat" class="button button-chat header-nav__button">
+                Чат
+              </button>
+              <button type="button" name="profile" class="button button-profile header-nav__button">
+                Профиль
+              </button>
+            </div>
+            <div class="menu__contacts">
+              <p class="menu__email">mail@cps.com</p>
+              <p class="menu__telephone">8 800 890 8900</p>
+              <ul class="menu__languages-list languages-list list">
+                <li><a class="link languages-list__link link_active">RU</a></li>
+                <li><a href="#" class="link languages-list__link">EN</a></li>
+                <li><a href="#" class="link languages-list__link">CH</a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
     </div>
   </body>
 </html>

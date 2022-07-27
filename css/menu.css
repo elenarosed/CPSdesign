@@ -1,0 +1,140 @@
+.menu-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in;
+}
+
+.menu-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 100vh;
+    overflow: auto;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+
+    background-color: #FFFFFF;
+    box-shadow: 5px 0 35px -2px #949496;
+}
+
+.menu-wrapper:target{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s ease-in;
+}
+
+.menu-header{
+    display: flex;
+    margin: 24px;
+    margin-bottom: 42px;
+    height: 88px;
+    align-items: center;
+}
+
+.menu__logo{
+    flex-shrink: 0;
+    margin-left: 16px;
+    margin-right: 78px;
+}
+
+.menu__search{
+    flex-shrink: 0;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu__close{
+    flex-shrink: 0;
+    background-image: url("../img/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__link{
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.menu__link:hover{
+    background-color: rgb(245, 245, 245);
+}
+
+.link{
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+.menu__link_active{
+    position: relative;
+}
+
+.menu__link_active::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: -4px;
+    left: -24px;
+    height: 32px;
+    border-left: 4px solid #41F6D7;
+    border-radius: 0 5px 5px 0;
+}
+
+.link_active{
+    color: #7E7E82;
+}
+
+.menu__footer{
+    margin-left: 24px;
+    margin-top: auto;
+}
+
+.menu__email{
+    margin: 16px 0 12px 0;
+}
+
+.menu__telephone{
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32px;
+}
+
+.menu__languages-list{
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.languages-list__link{
+    margin-right: 7px;
+}
