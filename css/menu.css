@@ -119,10 +119,12 @@
 }
 
 .menu__email{
+    display: block;
     margin: 16px 0 12px 0;
 }
 
 .menu__telephone{
+    display: block;
     margin: 0;
     margin-bottom: 40px;
     font-size: 24px;
