@@ -70,51 +70,51 @@ body{
   margin-left: 26px;
   margin-right: 21px;
   padding: 0;
-  background-image: url("../img/menu.svg");
+  background-image: url('../img/menu.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-call{
-  background-image: url("../img/call.svg");
+  background-image: url('../img/call.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-chat{
-  background-image: url("../img/chat.svg");
+  background-image: url('../img/chat.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-profile{
-  background-image: url("../img/profile.svg");
+  background-image: url('../img/profile.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-repair{
   position: relative;
-  background-image: url("../img/repair.svg");
+  background-image: url('../img/repair.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-repair::before{
-  content: "";
+  content: '';
   position: absolute;
   right: 150%;
   top: 5px;
   display: block;
   width: 2px;
   height: 32px;
-  background-image: url("../img/divider.svg");
+  background-image: url('../img/divider.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-status{
-  background-image: url("../img/status.svg");
+  background-image: url('../img/status.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -143,11 +143,18 @@ body{
 
 /* SERVICES SECTION */
 
-.heading{
+.main-heading{
   font-family: 'TT Lakes ExtraBold', Arial, sans-serif;
   font-size: 28px;
   line-height: 40px;
   font-weight: bold;
+}
+
+.heading{
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #7E7E82;
 }
 
 .services-header{
@@ -161,7 +168,7 @@ body{
 }
 
 .services__heading::before{
-  content: "";
+  content: '';
   position: absolute;
   display: inline-block;
   top: 0;
@@ -198,7 +205,7 @@ body{
 }
 
 .services-header__button::after{
-  content: "";
+  content: '';
   width: 40px;
   height: 40px;
   margin-left: 8px;
@@ -212,19 +219,18 @@ body{
 }
 
 .button-repair-text::after{
-  background-image: url("../img/repair.svg");
+  background-image: url('../img/repair.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .button-status-text::after{
-  background-image: url("../img/status.svg");
+  background-image: url('../img/status.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .services-navigation__link {
-  color: #7E7E82;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -235,9 +241,6 @@ body{
   flex-wrap: nowrap;
   overflow: scroll;
   width: auto;
-
-  font-size: 16px;
-  line-height: 24px;
   list-style: none;
 }
 
@@ -297,11 +300,11 @@ body{
 }
 
 .services-description__link::before{
-  content: "";
+  content: '';
   width: 10px;
   height: 10px;
   padding-right: 26px;
-  background-image: url("../img/arrows.svg");
+  background-image: url('../img/arrows.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -329,14 +332,16 @@ body{
   }
 
   .header__menu-button::before{
-    content: "";
+    content: '';
     position: absolute;
     left: 61px;
     top: 5px;
+
     display: block;
     width: 2px;
     height: 32px;
-    background-image: url("../img/divider.svg");
+
+    background-image: url('../img/divider.svg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -413,7 +418,7 @@ body{
     display: none;
   }
 
-  .heading{
+  .services__heading{
     margin-top: 42px;
     margin-left: 32px;
     margin-bottom: 8px;
