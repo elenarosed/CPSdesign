@@ -1,5 +1,5 @@
 let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
-let swiper;
+let swiper = undefined;
 let init = false;
 
 let brandsSection = document.querySelector('.brands-section');
@@ -25,7 +25,10 @@ let layoutOnResize = function() {
         }
     }
     else {
-        swiper.destroy(true, true);
+        if (swiper !== undefined) {
+            swiper.destroy(true, true);
+        }
+
         init = false;
 
         if (window.innerWidth >= 1120 && button.classList.contains('read-more-button_opened')) {
