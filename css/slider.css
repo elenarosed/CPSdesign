@@ -79,6 +79,17 @@
     border-radius: 6px;
 }
 
+.swiper-slide:hover .brand-link{
+    filter: saturate(3) brightness(1.2);
+    transform: scale(1.1);
+    transition: 0.4s ease-out;
+
+}
+
+.swiper-slide:hover{
+    box-shadow: 0 0 5px 0 #7E7E82;
+}
+
 .slide__container{
     margin: 16px;
     margin-right: 0;

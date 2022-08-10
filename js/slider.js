@@ -3,8 +3,8 @@ let swiper = undefined;
 let init = false;
 
 let brandsSection = document.querySelector('.brands-section');
-let brandsContainer = document.querySelector('.brands-container');
-let button = document.querySelector('.read-more-button');
+let brandsContainer = brandsSection.querySelector('.brands-container');
+let button = brandsSection.querySelector('.read-more-button');
 
 let layoutOnResize = function() {
     if(mobile.matches) {
@@ -45,7 +45,7 @@ window.addEventListener("load", layoutOnResize);
 window.addEventListener("resize", layoutOnResize);
 
 let showMore = function(){
-    let buttonStyles = document.querySelector('.brands-section__button');
+    let buttonStyles = brandsSection.querySelector('.brands-section__button');
     let showMore = button.classList.contains('read-more-button_closed');
 
     if(showMore){
