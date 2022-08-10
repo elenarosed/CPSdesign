@@ -87,6 +87,7 @@
 }
 
 .swiper-slide:hover{
+
     box-shadow: 0 0 5px 0 #7E7E82;
 }
 
@@ -149,7 +150,7 @@
         align-content: flex-start;
         flex-wrap: wrap;
         overflow: hidden;
-        margin-top: 24px;
+        padding-top: 24px;
     }
 
     .swiper-slide{
