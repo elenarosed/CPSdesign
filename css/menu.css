@@ -5,6 +5,7 @@
 
     width: 100%;
     height: 100%;
+
     background-color: rgba(255, 255, 255, 0.9);
     opacity: 0;
     visibility: hidden;
@@ -15,8 +16,10 @@
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
+
     z-index: -1;
 }
 
@@ -32,7 +35,7 @@
     color: #1B1C21;
 
     background-color: #FFFFFF;
-    box-shadow: 5px 0 35px -2px #949496;
+    box-shadow: 16px 0 52px rgba(14, 24, 80, 0.2);
 }
 
 .menu-wrapper:target{
@@ -41,12 +44,18 @@
     transition: 0.3s ease-in;
 }
 
+
+/* menu header */
+
 .menu-header{
     display: flex;
-    margin: 24px;
-    margin-bottom: 42px;
     height: 88px;
     align-items: center;
+}
+
+.menu__header{
+    margin: 24px;
+    margin-bottom: 42px;
 }
 
 .menu__logo{
@@ -57,17 +66,19 @@
 
 .menu__search{
     flex-shrink: 0;
-    background-image: url("../img/search.svg");
+    background-image: url('../img/search.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .menu__close{
     flex-shrink: 0;
-    background-image: url("../img/close.svg");
+    background-image: url('../img/close.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* menu navigation */
 
 .list{
     list-style: none;
@@ -75,36 +86,30 @@
     padding: 0;
 }
 
-.menu__link{
+.menu-link{
     display: flex;
     align-items: center;
     padding-left: 24px;
     height: 40px;
-    font-weight: 600;
 }
 
-.menu__link:hover{
+.menu-link:hover{
     background-color: rgb(245, 245, 245);
 }
 
-.link{
-    font-size: 16px;
-    line-height: 24px;
-    color: #1B1C21;
-    text-decoration: none;
-}
-
-.menu__link_active{
+.menu-link_active{
     position: relative;
 }
 
-.menu__link_active::before{
-    content: "";
+.menu-link_active::before{
+    content: '';
     position: absolute;
-    display: inline-block;
     top: -4px;
     left: -24px;
+
+    display: inline-block;
     height: 32px;
+
     border-left: 4px solid #41F6D7;
     border-radius: 0 5px 5px 0;
 }
@@ -112,6 +117,9 @@
 .link_active{
     color: #7E7E82;
 }
+
+
+/* menu footer */
 
 .menu__footer{
     margin-left: 24px;
@@ -123,13 +131,18 @@
     margin: 16px 0 12px 0;
 }
 
-.menu__telephone{
+.menu__telephone {
     display: block;
     margin: 0;
     margin-bottom: 40px;
+}
+
+.tel-link{
+    font-family: 'TT Lakes Bold', Arial, sans-serif;
     font-size: 24px;
-    font-weight: 800;
     line-height: 32px;
+    color: #1B1C21;
+    text-decoration: none;
 }
 
 .menu__languages-list{

@@ -1,12 +1,14 @@
 .brands-section{
     width: 320px;
 }
+
 .heading{
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
     color: #7E7E82;
 }
+
 .brands-header{
     background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%)
 }
@@ -14,14 +16,15 @@
 .brands-section__heading{
     margin: 0;
     padding: 16px;
-    text-transform: uppercase;
 }
 
 .brand-link{
     position: relative;
+
     display: block;
     width: 40px;
     height: 40px;
+
     border: 2px solid #FF3E79;
     border-radius: 20px;
     text-decoration: none;
@@ -61,7 +64,6 @@
 }
 
 
-
 /* SLIDER STYLES */
 
 .swiper-slide{
@@ -87,7 +89,6 @@
 }
 
 .swiper-slide:hover{
-
     box-shadow: 0 0 5px 0 #7E7E82;
 }
 
@@ -166,16 +167,10 @@
     }
 
     .read-more-button{
-        display: block;
         position: relative;
+        display: block;
         margin: 0;
         padding: 0;
-
-        font-family: inherit;
-        font-size: 16px;
-        line-height: 24px;
-        font-weight: 500;
-        color: #1B1C21;
 
         background: none;
         border: none;
@@ -186,6 +181,7 @@
         position: absolute;
         top: 7px;
         left: -17px;
+
         width: 8px;
         height: 11px;
     }
