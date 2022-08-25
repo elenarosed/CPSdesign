@@ -36,6 +36,9 @@ html {
   box-sizing: inherit;
 }
 
+dl, dd{
+  margin: 0;
+}
 
 /* GENERAL */
 
@@ -43,15 +46,27 @@ body{
   font-family: 'TT Lakes', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  background-color: #F8F8F8;
+
   color: #1B1C21;
-  margin:0;
+  margin: 0;
+}
+
+.page-layout{
+  background-color: #F8F8F8;
+}
+
+.page_centered{
+  position: relative;
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .button{
   width: 40px;
   height: 40px;
   padding:0;
+
   font-size: 0;
   border: none;
   border-radius: 20px;
@@ -76,6 +91,7 @@ body{
 .heading_small{
   font-family: 'TT Lakes Medium', Arial, sans-serif;
   font-size: 16px;
+  font-weight: normal;
   line-height: 24px;
   color: #1B1C21;
   text-decoration: none;
@@ -154,7 +170,7 @@ body{
 .button-repair::before{
   content: '';
   position: absolute;
-  right: 150%;
+  right: 50px;
   top: 5px;
 
   display: block;
@@ -197,7 +213,7 @@ body{
   content: '';
   position: absolute;
   top: 0;
-  left: -25px;
+  left: -24px;
 
   display: inline-block;
   height: 40px;
@@ -299,7 +315,6 @@ body{
 .services__description{
   display: flex;
   flex-direction: column;
-  margin: 16px;
   margin-top: 24px;
 }
 
@@ -307,9 +322,25 @@ body{
   margin: 0 auto;
 }
 
-.services-description__info{
+.services-description-info_mobile{
   height: 90px;
   overflow: hidden;
+}
+
+.services-description-info_open{
+  height: 480px;
+}
+
+.services-description-info_open_pc{
+  height: 360px;
+}
+
+.services-description-info_desktop{
+  overflow: hidden;
+  height: 160px;
+}
+
+.services-description__info{
   margin-bottom: 10px;
 }
 
@@ -317,30 +348,88 @@ body{
   width:288px;
 }
 
-.services-description__link{
+.services-description-button{
+  position: relative;
+  width: 150px;
+  border: none;
+  background-color:transparent;
+}
+
+.services-description-button:hover{
+  color: #FF3E79;
+  font-size: 17px;
+  text-decoration: underline;
+  transition: 0.1s ease;
+}
+
+.services-description__button{
   margin-left: 10px;
 }
 
-.services-description__link:hover{
+/*.services-description__link:hover{
   transform: scale(1.5);
   transition: 0.3s ease-out;
+}*/
+
+.services-description__button::before{
+  content: '';
+  
+  position: absolute;
+  top: 7px;
+  left: 5px;
+
+  width: 8px;
+  height: 11px;
 }
 
-.services-description__link::before{
-  content: '';
-
-  width: 10px;
-  height: 10px;
-  padding-right: 26px;
-
+.services-description__button_closed::before{
   background-image: url('../img/arrows.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.readmore_opened::before{
+  left: 25px;
+  background-image: url('../img/arrows.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
 .services-description__image{
   max-width: 320px;
   margin: 15px auto 0 auto;
+}
+
+/* Footer */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  line-height: 16px;
+  color: #7E7E82;
+  border-top: 1px solid #D9FFF5;
+}
+
+.footer-text{
+  text-align: center;
+  max-width: 320px;
+}
+
+.footer__text{
+  margin: 16px 0 16px 0;
+}
+
+.footer-link:hover{
+  color: #FF3E79;
+  text-decoration: underline;
+}
+
+.footer__link{
+  color: #7E7E82;
+  text-decoration: none;
 }
 
 
@@ -383,6 +472,10 @@ body{
     margin-right: 24px;
   }
 
+  .button-repair::before{
+    right: 60px;
+  }
+
   .personal-section_extra-margin{
     margin-left: 18px;
   }
@@ -398,8 +491,8 @@ body{
 
   .services__description{
     flex-direction: row;
-    margin-bottom: 0;
-    margin-top: 32px;
+    width: 720px;
+    margin: 32px auto 0 auto;
   }
 
   .services-description__text{
@@ -409,7 +502,6 @@ body{
 
   .services-description__text-section{
     margin: 0;
-    margin-left: 24px;
   }
 
   .text-section{
@@ -424,27 +516,54 @@ body{
     margin-bottom: 10px;
   }
 
-  .services-description__link{
+  .services-description__button{
     margin-left: 10px;
     margin-bottom: 16px;
   }
 
   .services-image{
     max-width: 360px;
+    height: 100%;
   }
 
  .services-description__image{
    margin: 0;
    margin-left: 48px;
  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .footer-text{
+    width: 33%;
+  }
+
+  .footer-text:first-of-type{
+    text-align: left;
+  }
+
+  .footer-text:last-of-type{
+    text-align: right;
+  }
 }
 
 
-/* 1120 PX */
+/* 1440 PX */
 
-@media (min-width: 1120px){
+@media (min-width: 1440px){
   .page-layout{
+    position: absolute;
+    left: 320px;
     margin: 0 auto;
+    width: 1120px;
+  }
+
+  .main-page{
+
     width: 1120px;
   }
 
@@ -490,6 +609,10 @@ body{
     margin-top: 10px;
   }
 
+  .services-description{
+    width: 1056px;
+  }
+
   .services__description{
     flex-direction: row;
     margin-top: 32px;
@@ -511,4 +634,10 @@ body{
     margin: 0;
     margin-left: 36px;
   }
+
+  .footer{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
 }
